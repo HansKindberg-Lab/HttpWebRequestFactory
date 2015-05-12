@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<CoreBuildDependsOn>
+			$(CoreBuildDependsOn);
+			BuildNuGetPackage;
+		</CoreBuildDependsOn>
+	</PropertyGroup>
+	<Target Name="BuildNuGetPackage">
+		<PropertyGroup>
+			<Properties>Configuration="$(Configuration)"</Properties>
+		</PropertyGroup>
+		<Exec
+			Command='"$(NuGetExePath)" pack "$(ProjectPath)" -IncludeReferencedProjects -OutputDirectory $(OutputPath) -Properties $(Properties) -Verbosity "$(NuGetVerbosity)"'
+		/>
+	</Target>
+</Project>

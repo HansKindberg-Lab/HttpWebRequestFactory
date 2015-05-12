@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1BBB2FFC-CD6A-44DF-AEAD-DFA0B75F5CE7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.config = .nuget\NuGet.config
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysis", "{A602A697-9564-4EB0-9635-E0C5A6BDA2BF}"
+	ProjectSection(SolutionItems) = preProject
+		CodeAnalysis\Solution.ruleset = CodeAnalysis\Solution.ruleset
+		CodeAnalysis\Solution.Tests.ruleset = CodeAnalysis\Solution.Tests.ruleset
+		CodeAnalysis\SolutionDictionary.xml = CodeAnalysis\SolutionDictionary.xml
+		CodeAnalysis\SolutionSuppressions.cs = CodeAnalysis\SolutionSuppressions.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{5740789A-967D-48B0-88D9-6474A935EA8E}"
+	ProjectSection(SolutionItems) = preProject
+		Properties\Solution-AssemblyInfo.cs = Properties\Solution-AssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HansKindberg", "HansKindberg\HansKindberg.csproj", "{3DAD10D9-F6B7-4ACF-9728-FDB26CC88BC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HansKindberg.IntegrationTests", "HansKindberg.IntegrationTests\HansKindberg.IntegrationTests.csproj", "{83B6EC3C-0C00-4045-A3D2-2BCB1FF08ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HansKindberg.ShimTests", "HansKindberg.ShimTests\HansKindberg.ShimTests.csproj", "{EC6C724C-E54C-41B0-93A9-F01FB78DD5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HansKindberg.UnitTests", "HansKindberg.UnitTests\HansKindberg.UnitTests.csproj", "{D843DD6A-1F4D-4517-B1EC-4C9CB1651F59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{A2126B85-B983-44DD-ADEE-ACF6B6C72432}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DAD10D9-F6B7-4ACF-9728-FDB26CC88BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DAD10D9-F6B7-4ACF-9728-FDB26CC88BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DAD10D9-F6B7-4ACF-9728-FDB26CC88BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DAD10D9-F6B7-4ACF-9728-FDB26CC88BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B6EC3C-0C00-4045-A3D2-2BCB1FF08ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B6EC3C-0C00-4045-A3D2-2BCB1FF08ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B6EC3C-0C00-4045-A3D2-2BCB1FF08ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B6EC3C-0C00-4045-A3D2-2BCB1FF08ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6C724C-E54C-41B0-93A9-F01FB78DD5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6C724C-E54C-41B0-93A9-F01FB78DD5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6C724C-E54C-41B0-93A9-F01FB78DD5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6C724C-E54C-41B0-93A9-F01FB78DD5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D843DD6A-1F4D-4517-B1EC-4C9CB1651F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D843DD6A-1F4D-4517-B1EC-4C9CB1651F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D843DD6A-1F4D-4517-B1EC-4C9CB1651F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D843DD6A-1F4D-4517-B1EC-4C9CB1651F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
