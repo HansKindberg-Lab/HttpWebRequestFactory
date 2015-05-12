@@ -45,10 +45,6 @@ namespace HansKindberg.Net
 		{
 			var httpWebRequest = this.DefaultHttpWebRequestFactory.Create(uri);
 
-			//var cookieContainer = new CookieContainer();
-
-			//httpWebRequest.CookieContainer = cookieContainer;
-
 			httpWebRequest.CookieContainer = new CookieContainer();
 			httpWebRequest.Credentials = CredentialCache.DefaultCredentials;
 
