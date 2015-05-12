@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Net;
 
@@ -14,6 +15,7 @@ namespace HansKindberg.Net
 
 		#region Constructors
 
+		[SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "HttpRequestCreator")]
 		public DefaultHttpWebRequestFactory()
 		{
 			var httpRequestHeaderType = typeof(HttpRequestHeader);
