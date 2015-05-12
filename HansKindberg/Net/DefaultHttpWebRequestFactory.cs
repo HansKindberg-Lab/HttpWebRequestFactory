@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Net;
 
 namespace HansKindberg.Net
@@ -20,11 +21,14 @@ namespace HansKindberg.Net
 			var httpRequestHeaderAssemblyQualifiedName = httpRequestHeaderType.AssemblyQualifiedName;
 
 			if(httpRequestHeaderAssemblyQualifiedName == null)
-				throw new InvalidOperationException("Could not get the assembly-qualified-name from the type \"{0}\".");
+				throw new InvalidOperationException(string.Format(CultureInfo.InvariantCulture, "Could not get the assembly-qualified-name from the type \"{0}\".", httpRequestHeaderType));
 
 			var defaultHttpWebRequestFactoryTypeAssemblyQualifiedName = httpRequestHeaderAssemblyQualifiedName.Replace(httpRequestHeaderType.Name, "HttpRequestCreator");
 
 			var defaultHttpWebRequestFactoryType = Type.GetType(defaultHttpWebRequestFactoryTypeAssemblyQualifiedName, true);
+
+			if(defaultHttpWebRequestFactoryType == null)
+				throw new InvalidOperationException(string.Format(CultureInfo.InvariantCulture, "Could not get the type from the assembly-qualified-name \"{0}\".", defaultHttpWebRequestFactoryTypeAssemblyQualifiedName));
 
 			this._httpRequestCreator = (IWebRequestCreate) Activator.CreateInstance(defaultHttpWebRequestFactoryType);
 		}
